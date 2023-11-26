@@ -10,11 +10,11 @@ from langchain.chat_models import ChatOpenAI
 
 class PDFQuery:
     def __init__(self, openai_api_key = None) -> None:
-        self.embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
-        os.environ["OPENAI_API_KEY"] = openai_api_key
+        self.embeddings = OpenAIEmbeddings(openai_api_key=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)
+        os.environ["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"] = openai_api_key
         self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         # self.llm = OpenAI(temperature=0, openai_api_key=openai_api_key)
-        self.llm = ChatOpenAI(temperature=0, openai_api_key=openai_api_key)
+        self.llm = ChatOpenAI(temperature=0, openai_api_key=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)
         self.chain = None
         self.db = None
 
