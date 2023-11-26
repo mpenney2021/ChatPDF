@@ -7,6 +7,11 @@
     "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/python\" --template-args '{}' --features '[]'": {
       "name": "Environment setup",
       "command": "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/python\" --template-args '{}' --features '[]'"
+    },
+    "python -m venv /path/to/new/virtual/environment": {
+      "name": "python -m venv /path/to/new/virtual/environment",
+      "command": "python -m venv /path/to/new/virtual/environment",
+      "runAtStart": true
     }
   }
 }
